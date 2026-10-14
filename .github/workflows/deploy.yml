@@ -13,6 +13,9 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -38,10 +41,9 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Create a clean orphan branch from the build output
           cd dist
           git init
           git checkout -b gh-pages
           git add -A
           git commit -m "Deploy $(git -C .. rev-parse --short HEAD)"
-          git push --force "${{ github.server_url }}/${{ github.repository }}" gh-pages:gh-pages
+          git push --force "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@${GITHUB_SERVER_URL#https://}/${{ github.repository }}" gh-pages:gh-pages
