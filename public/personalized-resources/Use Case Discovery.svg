@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#ffffff"/>
+  <text x="90" y="180" fill="#161616" font-family="Arial, sans-serif" font-size="70" font-weight="400">Use Case Discovery</text>
+  <rect x="90" y="225" width="92" height="7" fill="#0f62fe"/>
+  <text x="90" y="305" fill="#525252" font-family="Arial, sans-serif" font-size="27">
+    <tspan x="90" dy="0">A part of Bobathon with Premium Package for i</tspan>
+    <tspan x="90" dy="44">IBM + Honda Logistics</tspan>
+  </text>
+  <text x="90" y="405" fill="#525252" font-family="Arial, sans-serif" font-size="24">Sept 24, 2026</text>
+  <rect x="790" y="105" width="720" height="675" fill="#f4f4f4"/>
+  <image href="Use%20Case%20Discovery%20Board.png" x="790" y="105" width="720" height="675" preserveAspectRatio="xMidYMid slice"/>
+  <text x="90" y="840" fill="#161616" font-family="Arial, sans-serif" font-size="30" font-weight="700">IBM</text>
+</svg>
