@@ -8,7 +8,10 @@ try {
   // @ts-ignore
   siteConfiguration = (await import('./.figma/make/site.json', { with: { type: 'json' } })).default
 } catch {
-  siteConfiguration = { title: 'Bob Learning Hub' }
+  siteConfiguration = {
+    title: 'Bob Learning Hub',
+    icons: { icon: './figma-assets/b4967.svg' },
+  }
 }
 
 // Vite config — https://vitejs.dev/config/
@@ -17,7 +20,7 @@ export default defineConfig(({ mode }) => {
   const emitSourcemaps = mode === 'development'
 
   return {
-    base: process.env.FIGMA_PUBLIC_URL ? `${process.env.FIGMA_PUBLIC_URL}/` : '/bob-page/',
+    base: process.env.FIGMA_PUBLIC_URL ? `${process.env.FIGMA_PUBLIC_URL}/` : './',
     build: {
       sourcemap: emitSourcemaps ? 'inline' : false,
       minify: !emitSourcemaps,

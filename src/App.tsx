@@ -290,7 +290,8 @@ function Nav({ page, setPage }: { page: Page; setPage: (p: Page) => void }) {
 
 // ─── Home Page ────────────────────────────────────────────────────────────────
 
-const FA = '/figma-assets'
+const BASE = import.meta.env.BASE_URL
+const FA = `${BASE}figma-assets`
 
 function PlayIcon() {
   return (
@@ -798,8 +799,8 @@ const FEATURED_PRESENTATION: PersonalizedResource = {
   title: 'Lab Intro',
   description: 'An introduction to the IBM i application modernization lab and the exercises prepared for the Honda team.',
   type: 'PowerPoint',
-  url: '/personalized-resources/lab-intro.pptx',
-  preview: '/personalized-resources/Lab%20Intro.svg',
+  url: `${BASE}personalized-resources/lab-intro.pptx`,
+  preview: `${BASE}personalized-resources/Lab%20Intro.svg`,
   accent: '#0F62FE',
   eyebrow: 'Featured presentation',
 }
@@ -809,8 +810,8 @@ const PERSONALIZED_RESOURCES: PersonalizedResource[] = [
     title: 'Bobathon Setup',
     description: 'Setup instructions and prerequisites for the IBM i application modernization labs.',
     type: 'PDF',
-    url: '/personalized-resources/bobathon-setup.pdf',
-    preview: '/personalized-resources/Bobathon%20Setup.jpg',
+    url: `${BASE}personalized-resources/bobathon-setup.pdf`,
+    preview: `${BASE}personalized-resources/Bobathon%20Setup.jpg`,
     accent: '#0F62FE',
     eyebrow: 'Lab preparation',
   },
@@ -818,8 +819,8 @@ const PERSONALIZED_RESOURCES: PersonalizedResource[] = [
     title: 'Bob Intro',
     description: 'An overview of IBM Bob and its AI-powered software development experience.',
     type: 'PowerPoint',
-    url: '/personalized-resources/bob-intro.pptx',
-    preview: '/personalized-resources/Bob%20Intro.png',
+    url: `${BASE}personalized-resources/bob-intro.pptx`,
+    preview: `${BASE}personalized-resources/Bob%20Intro.png`,
     accent: '#8A3FFC',
     eyebrow: 'Product introduction',
   },
@@ -827,8 +828,8 @@ const PERSONALIZED_RESOURCES: PersonalizedResource[] = [
     title: 'Use Case Discovery',
     description: 'A guided presentation for identifying and shaping high-value modernization use cases.',
     type: 'PowerPoint',
-    url: '/personalized-resources/use-case-discovery.pptx',
-    preview: '/personalized-resources/Use%20Case%20Discovery.svg',
+    url: `${BASE}personalized-resources/use-case-discovery.pptx`,
+    preview: `${BASE}personalized-resources/Use%20Case%20Discovery.svg`,
     accent: '#DA1E28',
     eyebrow: 'Discovery workshop',
   },
