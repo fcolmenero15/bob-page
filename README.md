@@ -73,3 +73,9 @@ To run and test the site locally on your computer:
    ```bash
    npm run build
    ```
+
+---
+
+## 3. Customizing Resources with Bob
+
+See [`adding_changes.md`](adding_changes.md) for full instructions and prompt examples on using **Bob** to update client branding, add new presentations/PDFs, or swap out personalized workshop resources.
