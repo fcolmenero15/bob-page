@@ -1,6 +1,8 @@
 # Customizing Personalized Resources with Bob
 
-This guide explains how IBM teams can easily customize the **Personalized Resources** page for specific clients, accounts, or Bobathons using **Bob (AI Coding Assistant)**.
+> **Note:** The **Personalized Resources** page is currently disabled to ensure the privacy of client documents.
+
+This guide explains how IBM teams can customize the **Personalized Resources** page for specific clients, accounts, or Bobathons using **Bob (AI Coding Assistant)** when enabled.
 
 ---
 

@@ -47,12 +47,13 @@ If you only need a single linked copy under your GitHub account:
 ### Option A: GitHub Pages Deployment
 To host your customized site live on GitHub Pages:
 
-1. **Enable GitHub Pages**:
+1. **Enable GitHub Pages (Deploy from a Branch)**:
    - In your repository on GitHub, go to **Settings** > **Pages**.
-   - Under **Build and deployment** > **Source**, select **GitHub Actions**.
+   - Under **Build and deployment** > **Source**, select **Deploy from a branch**.
+   - Under **Branch**, select `gh-pages` and `/ (root)`, then click **Save**.
 
 2. **Deploy**:
-   - Push your changes to the `main` branch. GitHub Actions will build and deploy the site automatically (the site is preconfigured to use relative paths, so no URL configuration is needed).
+   - Push your changes to the `main` branch. The repository's automated workflow will build the project and push the output to the `gh-pages` branch, which GitHub Pages serves from.
 
 ### Option B: Local Development
 To run and test the site locally on your computer:
@@ -78,4 +79,6 @@ To run and test the site locally on your computer:
 
 ## 3. Customizing Resources with Bob
 
-See [`adding_changes.md`](adding_changes.md) for full instructions and prompt examples on using **Bob** to update client branding, add new presentations/PDFs, or swap out personalized workshop resources.
+> **Note:** The **Personalized Resources** page is currently disabled for privacy reasons regarding client documents.
+
+See [`adding_changes.md`](adding_changes.md) for full instructions and prompt examples on using **Bob** to update client branding, add new presentations/PDFs, or swap out personalized workshop resources once enabled.
