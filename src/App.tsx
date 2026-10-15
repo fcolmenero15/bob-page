@@ -252,7 +252,6 @@ const NAV_ITEMS: { page: Page; label: string }[] = [
   { page: 'home', label: 'Home' },
   { page: 'learn', label: 'Learn' },
   { page: 'resources', label: 'Resources' },
-  { page: 'personalized', label: 'Personalized Resources' },
 ]
 
 function Nav({ page, setPage }: { page: Page; setPage: (p: Page) => void }) {
@@ -561,7 +560,6 @@ function HomePage({ setPage }: { setPage: (p: Page) => void }) {
               <button onClick={() => setPage('home')} className="text-[14px] text-[#f4f4f4] leading-[20px] tracking-[0.16px] text-left hover:underline">Home</button>
               <button onClick={() => setPage('learn')} className="text-[14px] text-[#f4f4f4] leading-[20px] tracking-[0.16px] text-left hover:underline">Learning Roadmap</button>
               <button onClick={() => setPage('resources')} className="text-[14px] text-[#f4f4f4] leading-[20px] tracking-[0.16px] text-left hover:underline">All Resources</button>
-              <button onClick={() => setPage('personalized')} className="text-[14px] text-[#f4f4f4] leading-[20px] tracking-[0.16px] text-left hover:underline">Personalized Resources</button>
             </div>
             <div className="flex flex-col gap-2 px-4 w-[320px]">
               <a href="https://www.ibm.com/contact/global" target="_blank" rel="noopener noreferrer" className="text-[14px] text-[#f4f4f4] leading-[20px] tracking-[0.16px] hover:underline">Contact IBM</a>
@@ -799,7 +797,7 @@ const FEATURED_PRESENTATION: PersonalizedResource = {
   title: 'Lab Intro',
   description: 'An introduction to the IBM i application modernization lab and the exercises prepared for the Honda team.',
   type: 'PowerPoint',
-  url: `${BASE}personalized-resources/lab-intro.pptx`,
+  url: '',
   preview: `${BASE}personalized-resources/Lab%20Intro.svg`,
   accent: '#0F62FE',
   eyebrow: 'Featured presentation',
@@ -819,7 +817,7 @@ const PERSONALIZED_RESOURCES: PersonalizedResource[] = [
     title: 'Bob Intro',
     description: 'An overview of IBM Bob and its AI-powered software development experience.',
     type: 'PowerPoint',
-    url: `${BASE}personalized-resources/bob-intro.pptx`,
+    url: '',
     preview: `${BASE}personalized-resources/Bob%20Intro.png`,
     accent: '#8A3FFC',
     eyebrow: 'Product introduction',
@@ -828,7 +826,7 @@ const PERSONALIZED_RESOURCES: PersonalizedResource[] = [
     title: 'Use Case Discovery',
     description: 'A guided presentation for identifying and shaping high-value modernization use cases.',
     type: 'PowerPoint',
-    url: `${BASE}personalized-resources/use-case-discovery.pptx`,
+    url: '',
     preview: `${BASE}personalized-resources/Use%20Case%20Discovery.svg`,
     accent: '#DA1E28',
     eyebrow: 'Discovery workshop',
@@ -1214,7 +1212,6 @@ export default function App() {
       {page === 'home' && <HomePage setPage={setPage} />}
       {page === 'learn' && <LearnPage />}
       {page === 'resources' && <ResourcesPage />}
-      {page === 'personalized' && <PersonalizedResourcesPage />}
     </div>
   )
 }
